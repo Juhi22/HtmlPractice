@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 
 <html>
-
   <head>
     <meta charset="utf-8" />
     <title>Pizza Difalco</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" media="screen" href="pizza.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster+Two"
+      rel="stylesheet"
+    />
     <script src="main.js"></script>
   </head>
 
   <body>
-
     <header>
-      <img src="48202457-pizza-flat-icon-logo-template-pizza-food-silhouette-pizza-piece-logo-pizza-slice-logo-pizza-menu-ill.jpg"
-      name="logo"
-      width="200px"
-      height="200px"
-      ><p id=title>Pizza DiFalco</p>
-      <p><a href="mainPage.html">Főoldal</a></p><p><a href="menu.html">Étlap</a></p>
-      <p><a href="order.html">Rendelés</a></p><p><a href="footer">Kapcsolat</a></p>
+      <p id="title">Pizza DiFalco</p>
+      <ul id="menu">
+        <li><a href="mainPage.html">Főoldal</a></li>
+        <li><a href="menu.html">Étlap</a></li>
+        <li><a href="order.html">Rendelés</a></li>
+        <li><a id="footer">Kapcsolat</a></li>
+      </ul>
     </header>
+    <div class="welcome_text">
+      <div>
+        <p>Kedves Látogató!</p>
+      </div>
+      <div>
+        <p>
+          A Pizza DiFalco elhozza Önnek az eredeti és utánozhatatlan ízvilágot
+          egyenesen a Olaszországból. Családunk már több évtizeden, generáción
+          át szolgálja ki az éhes vendégeket. Pizzáink teljes mértékben a
+          családi recept alapján készülnek. Díjnyertes éttermünk egy barátságos,
+          meleg légkört biztosít minden éhes száj számára.
+        </p>
+      </div>
+      <div>
+        <p>Dani DiFalco</p>
+      </div>
+    </div>
 
-      <p>Kedves Látogató!</p>
-      <p>A Pizza DiFalco elhozza Önnek az eredeti és utánozhatatlan ízvilágot egyenesen a Olaszországból.
-      Családunk már több évtizeden, generáción át szolgálja ki az éhes vendégeket. Pizzáink teljes mértékben
-      a családi recept alapján készülnek. Díjnyertes éttermünk egy barátságos, meleg légkört biztosít minden éhes száj
-      számára.
-      <p>Dani DiFalco</p>
-      </p><img src="boss.jpeg"><img src="outdoor.jpg"><img src="pizzapult.jpg">
+    <img id="pictures" src="outdoor.jpg" />
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Gh4P6hBoJYQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="video">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Gh4P6hBoJYQ"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
 
     <footer>
-      <p>Tel.:06 50 / 850-7981</p><p>6722 Szeged, Pizza utca 1.</p><p>https://facebook.com/PizzaDiFalco</p>
-    </footer>
-
+        <div id="phoneNumber">Kapcsolat:</div>
+        <div>
+          <p>Tel.:06 50 / 850-7981</p>
+          <p>6722 Szeged, Pizza utca 1.</p>
+          <p>https://facebook.com/PizzaDiFalco</p>
+        </div>
+      </footer>
   </body>
-
 </html>

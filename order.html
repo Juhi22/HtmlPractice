@@ -1,60 +1,87 @@
 <!DOCTYPE html>
 
 <html>
-
   <head>
     <meta charset="utf-8" />
     <title>Pizza Difalco</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="menu.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" media="screen" href="pizza.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster+Two"
+      rel="stylesheet"
+    />
     <script src="main.js"></script>
   </head>
 
   <body>
-
     <header>
-      <img src="48202457-pizza-flat-icon-logo-template-pizza-food-silhouette-pizza-piece-logo-pizza-slice-logo-pizza-menu-ill.jpg"
-      name="logo"
-      width="200px"
-      height="200px"
-      ><p id=title>Pizza DiFalco</p>
-      <p><a href="mainPage.html">Főoldal</a></p><p><a href="menu.html">Étlap</a></p>
-      <p><a href="order.html">Rendelés</a></p><p><a href="footer">Kapcsolat</a></p>
+      <p id="title">Pizza DiFalco</p>
+      <ul id="menu">
+        <li><a href="mainPage.html">Főoldal</a></li>
+        <li><a href="menu.html">Étlap</a></li>
+        <li><a href="order.html">Rendelés</a></li>
+        <li><a id="footer">Kapcsolat</a></li>
+      </ul>
     </header>
+    <form class="order" action="#" method="post" target="_blank">
+      <div class="orderOption">
+        <h3>Rendelés</h3>
+      </div>
 
-    <form action="#" method="post" target="_blank">
-      <h3>Rendelés</h3>
+      <div class="orderOption">
+        <p>Vezetéknév:</p>
+        <td><input type="text" name="firstname" /></td>
+      </div>
 
-      <p>Vezetéknév:</p>
-      <td><input type="text" name="firstname"></td>
+      <div class="orderOption">
+        <p>Keresztnév:</p>
+        <td><input type="text" name="secondname" /></td>
+      </div>
 
-      <p>Keresztnév:</p>
-      <td><input type="text" name="secondname"></td>
+      <div class="orderOption">
+        <p>Város/falu:</p>
+        <td><input type="text" name="city" /></td>
+      </div>
 
-      <p>Város/falu:</p>
-      <td><input type="text" name="city"></td>
+      <div class="orderOption">
+        <p>Irányítószám:</p>
+        <td><input type="num" name="zip" maxlength="4" size="4" /></td>
+      </div>
 
-      <p>Irányítószám:</p>
-      <td><input type="num" name="zip" maxlength="4" size="4"></td>
+      <div class="orderOption">
+        <p>Utca, hsz.:</p>
+        <td><input type="text" name="street" /></td>
+      </div>
 
-      <p>Utca, hsz.:</p>
-      <td><input type="text" name="street"></td>
+      <div class="orderOption">
+        <p>Telefonszám:</p>
+        <td><input type="text" name="phone" /></td>
+      </div>
 
-      <p>Telefonszám:</p>
-      <td><input type="text" name="phone"></td>
+      <div class="orderOption">
+        <p>Választott pizza/pizzák:</p>
+        <td><input type="text" name="pizza" /></td>
+      </div>
 
-      <p>Választott pizza/pizzák:</p>
-      <td><input type="text" name="pizza"></td>
+      <div class="orderOption">
+        <p>Megjegyzés:</p>
+        <textarea type="text" name="comment" rows="20" cols="120"></textarea>
+      </div>
 
-      <p>Megjegyzés:</p>
-      <textarea type="text" name="comment" rows="5" cols="30"></textarea>
-
-      <input type="submit" value="Megrendelem" onclick="alert('Köszönjük a rendelését, a Pizza egy órán belül megérkezik!')">
-
+      <div class="orderOption">
+        <input
+          type="submit"
+          value="Megrendelem"
+          onclick="alert('Köszönjük a rendelését, a Pizza egy órán belül megérkezik!')"
+        />
+      </div>
+    </form>
     <footer>
-      <p>Tel.:06 50 / 850-7981</p><p>6722 Szeged, Pizza utca 1.</p><p>https://facebook.com/PizzaDiFalco</p>
+      <div id="phoneNumber">Kapcsolat:</div>
+      <div>
+        <p>Tel.:06 50 / 850-7981</p>
+        <p>6722 Szeged, Pizza utca 1.</p>
+        <p>https://facebook.com/PizzaDiFalco</p>
+      </div>
     </footer>
-
   </body>
-
 </html>
