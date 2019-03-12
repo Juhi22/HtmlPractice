@@ -22,59 +22,66 @@
         <li><a href="#phoneNumber">Kapcsolat</a></li>
       </ul>
     </header>
-    <form class="order" action="#" method="post" target="_blank">
-      <div class="orderOption">
-        <h3>Rendelés</h3>
-      </div>
+    <div class="order">
+      <div class="orderForm">
+        <form action="#" method="post" target="_blank">
+          <div class="orderOption">
+            <h2>Rendelés</h2>
+          </div>
 
-      <div class="orderOption">
-        <p>Vezetéknév:</p>
-        <td><input type="text" name="firstname" /></td>
-      </div>
+          <div class="orderOption">
+            <p>Vezetéknév:</p>
+            <td><input type="text" name="firstname" /></td>
+          </div>
 
-      <div class="orderOption">
-        <p>Keresztnév:</p>
-        <td><input type="text" name="secondname" /></td>
-      </div>
+          <div class="orderOption">
+            <p>Keresztnév:</p>
+            <td><input type="text" name="secondname" /></td>
+          </div>
 
-      <div class="orderOption">
-        <p>Város/falu:</p>
-        <td><input type="text" name="city" /></td>
-      </div>
+          <div class="orderOption">
+            <p>Város/falu:</p>
+            <td><input type="text" name="city" /></td>
+          </div>
 
-      <div class="orderOption">
-        <p>Irányítószám:</p>
-        <td><input type="num" name="zip" maxlength="4" size="4" /></td>
-      </div>
+          <div class="orderOption">
+            <p>Irányítószám:</p>
+            <td><input type="num" name="zip" maxlength="4" size="4" /></td>
+          </div>
 
-      <div class="orderOption">
-        <p>Utca, hsz.:</p>
-        <td><input type="text" name="street" /></td>
-      </div>
+          <div class="orderOption">
+            <p>Utca, hsz.:</p>
+            <td><input type="text" name="street" /></td>
+          </div>
 
-      <div class="orderOption">
-        <p>Telefonszám:</p>
-        <td><input type="text" name="phone" /></td>
-      </div>
+          <div class="orderOption">
+            <p>Telefonszám:</p>
+            <td><input type="text" name="phone" /></td>
+          </div>
 
-      <div class="orderOption">
-        <p>Választott pizza/pizzák:</p>
-        <td><input type="text" name="pizza" /></td>
-      </div>
+          <div class="orderOption">
+            <p>Választott pizza/pizzák:</p>
+            <td><input type="text" name="pizza" /></td>
+          </div>
 
-      <div class="orderOption">
-        <p>Megjegyzés:</p>
-        <textarea type="text" name="comment" rows="20" cols="120"></textarea>
-      </div>
+          <div class="orderOption">
+            <p>Megjegyzés:</p>
+            <textarea type="text" name="comment" rows="10" cols="60"></textarea>
+          </div>
 
-      <div class="orderOption">
-        <input
-          type="submit"
-          value="Megrendelem"
-          onclick="alert('Köszönjük a rendelését, a Pizza egy órán belül megérkezik!')"
-        />
+          <div class="orderOption">
+            <input class="button"
+              type="submit"
+              value="Megrendelem"
+              onclick="alert('Köszönjük a rendelését, a Pizza egy órán belül megérkezik!')"
+            />
+          </div>
+        </form>
       </div>
-    </form>
+      <div class="orderPictures">
+        <img class="orderPicture" src="deliveryGuy.jpg" />
+      </div>
+    </div>
     <footer>
       <div id="phoneNumber">Kapcsolat:</div>
       <div>

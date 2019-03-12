@@ -1,5 +1,5 @@
 header {
-  background-image: url("háttérpizza.jpg");
+  background-image: url("backgroundpizza.jpg");
   border-radius: 10px;
 }
 
@@ -13,6 +13,10 @@ footer {
   margin-top: 50px;
 }
 
+#phoneNumber{
+  font-size: 400%;
+}
+
 body {
   font-family: "Lobster Two", cursive;
   margin-left: 10%;
@@ -23,6 +27,7 @@ body {
 #title {
   display: inline-flex;
   font-size: 1000%;
+  padding: 20px;
   background-color: green;
   color: rgb(255, 0, 0);
   text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255),
@@ -66,16 +71,32 @@ li a:hover {
   flex-direction: column;
   max-width: 700px;
   font-size: 200%;
+  border: solid 10px green;
+  background-color: rgb(231, 149, 101);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
-#outdoorPic{
+.pictures{
   margin-top: 100px;
   margin-left: 150px;
+  max-width: 450px;
+  max-height: 300px;
+  min-width: 450px;
+  min-height: 300px;
+  padding: 10px;
+  border: double 10px rgb(255, 0, 0);
 }
 
-#video{
+.videoClass {
   display: flex;
   justify-content: center;
+}
+
+.videoClass .video {
+  border: solid 10px rgb(255, 0, 0);
+  border-style: dashed;
 }
 
 table{
@@ -89,17 +110,37 @@ table{
   background-color: rgb(231, 149, 101);
 }
 
-#phoneNumber{
-  font-size: 400%;
-}
-
 .order{
+  display: flex;
+  justify-content: space-around;
   background-color: rgb(231, 149, 101);
-  font-size: 200%;
+  font-size: 50px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border: solid 10px;
+  border-radius: 5%;
 }
 
-.orderOption{
-  margin-left: 250px;
+.order .orderPictures .orderPicture{
+  max-width: 1000px;
+  max-height: 2000px;
+  border: double 5px rgb(255, 0, 0);
+  border-radius: 80%;
+  margin-top: 400px;
+  margin-right: 30px;
+}
+
+.order .orderForm .orderOption{
+  margin-left: 150px;
   padding-top: 10px;
   padding-bottom: 10px; 
+}
+
+.order .orderForm .orderOption .button{
+  background-color: rgb(255, 0, 0);
+  padding: 10px;
+  font-size: 60px;
+  color: white;
+  border: none;
+  border-radius: 12px;
 }

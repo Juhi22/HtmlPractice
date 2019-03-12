@@ -30,7 +30,7 @@
         <div>
           <p>
             A Pizza DiFalco elhozza Önnek az eredeti és utánozhatatlan ízvilágot
-            egyenesen a Olaszországból. Családunk már több évtizeden, generáción
+            egyenesen Olaszországból. Családunk már több évtizeden, generáción
             át szolgálja ki az éhes vendégeket. Pizzáink teljes mértékben a
             családi recept alapján készülnek. Díjnyertes éttermünk egy
             barátságos, meleg légkört biztosít minden éhes száj számára.
@@ -41,13 +41,17 @@
         </div>
       </div>
 
-      <div id="outdoorPic">
-        <img id="pictures" src="outdoor.jpg" />
+      <div>
+        <img class="pictures" src="outdoor.jpg" />
+        <img class="pictures" src="pizzacounter01.jpg" />
+        <img class="pictures" src="pizzaslice.jpg" />
+        <img class="pictures" src="pizzaslice2.jpg" />
       </div>
     </div>
 
-    <div id="video">
+    <div class="videoClass">
       <iframe
+        class="video"
         width="560"
         height="315"
         src="https://www.youtube.com/embed/Gh4P6hBoJYQ"
@@ -56,6 +60,25 @@
         allowfullscreen
       ></iframe>
     </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("pictures");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000);
+      }
+    </script>
 
     <footer>
       <div id="phoneNumber">Kapcsolat:</div>
