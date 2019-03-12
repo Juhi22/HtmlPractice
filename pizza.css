@@ -56,6 +56,11 @@ li a:hover {
   background-color: green;
 }
 
+.text_picture {
+  display: flex;
+  flex-direction: row;
+}
+
 .welcome_text {
   display: flex;
   flex-direction: column;
@@ -63,12 +68,14 @@ li a:hover {
   font-size: 200%;
 }
 
-#pictures{
-  float: right;
+#outdoorPic{
+  margin-top: 100px;
+  margin-left: 150px;
 }
 
 #video{
-  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 table{
