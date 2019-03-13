@@ -44,10 +44,6 @@ body {
   justify-content: space-around;
 }
 
-li {
-  float: left;
-}
-
 li a {
   font-size: 50px;
   display: block;
